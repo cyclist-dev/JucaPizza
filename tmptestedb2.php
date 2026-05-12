@@ -1,14 +1,10 @@
 <?php
 
 require_once 'config/DB.php';
-
 echo "<h1>Testando Conexão com o Banco de Dados</h1>";
-
-
 try {    
     $database = new DB();
     $conn = $database->getConnection();
-
     if ($conn) {
         echo "<p style='color: green;'>Conexão bem-sucedida!</p>";
     } else {
